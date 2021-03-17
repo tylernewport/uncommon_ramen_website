@@ -1,0 +1,251 @@
+.navbar .nav-links-container .nav-link, .navbar .nav-links-container .btn {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn {
+  background: #ffc900;
+  padding: 0.7rem 1.4rem;
+  font-size: 1.1rem !important;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #cca100;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.navbar {
+  padding: 2.5rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.2fr;
+      grid-template-columns: 1fr 1.2fr;
+}
+
+.navbar .logo img {
+  width: 250px;
+}
+
+.navbar .nav-links-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar .nav-links-container .nav-link {
+  padding: 1.2rem 0;
+  position: relative;
+}
+
+.navbar .nav-links-container .active-link:after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.navbar .nav-links-container .non-active-link:after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  border-bottom: 2px solid #000;
+  opacity: 0;
+}
+
+.navbar .nav-links-container .non-active-link:hover:after {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  height: 10%;
+  bottom: 0px;
+  opacity: 1;
+}
+
+.navbar .nav-links-container .drop-menu {
+  position: relative;
+}
+
+.navbar .nav-links-container .drop-menu-link {
+  position: relative;
+  padding-right: 1.3rem;
+}
+
+.navbar .nav-links-container .drop-menu-link i {
+  position: absolute;
+  top: 16px;
+  right: 0px;
+}
+
+.navbar .nav-links-container .drop-menu-link:hover + .drop-menu-link-item {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 36px;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.navbar .nav-links-container .drop-menu-link-item {
+  position: absolute;
+  top: 20px;
+  left: -25px;
+  z-index: 10;
+  padding: 2rem 4rem 2rem 1.5rem;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 7px #0000005b;
+          box-shadow: 0px 0px 7px #0000005b;
+  background: #fff;
+  opacity: 0;
+  cursor: default;
+}
+
+.navbar .nav-links-container .drop-menu-link-item:after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  left: 8px;
+  width: 100%;
+  height: 50%;
+  border-left: 2px solid #000;
+  opacity: 0;
+}
+
+.navbar .nav-links-container .drop-menu-link-item:hover:after {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  width: 100%;
+  left: 12px;
+  opacity: 1;
+}
+
+.showcase {
+  height: 50vh;
+  width: 100vw;
+  background: url(https://lh3.googleusercontent.com/gNyAyPBYGDzPIzAsVK71iBXrZBM9_wwcpTvF16CdNXNIYK3MHZ5BwAiNEgcKWMbGLoBpVGJGSVEiH4FuhCq4=w1178) no-repeat center center/cover;
+}
+
+.main-info .address-times {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 4rem 0;
+}
+
+.main-info .address-times p {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.main-info .address-times p span {
+  text-transform: lowercase;
+}
+
+.main-info .address-times .times {
+  text-align: right;
+}
+
+.main-info .pictures {
+  height: 75vh;
+  margin-bottom: 4rem;
+  position: relative;
+  background: url(https://lh3.googleusercontent.com/abN6MYK3jKiKws3m1fY3OB30m720W4GEkWLBXn_sqjc-Fnjd4_EHx9ALcG__dFFt6196miGwveE8JSTJGYsnZCo=w1178) no-repeat center center/contain;
+}
+
+.main-info .pictures .main-tag {
+  background: #f3f3f3;
+  width: 40%;
+  height: auto;
+  padding: 2rem;
+  position: absolute;
+  top: 110px;
+}
+
+.main-info .pictures .main-tag h2 {
+  font-size: 2.7rem;
+  font-weight: 300;
+  width: 60%;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.main-info .pictures .main-tag p {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.main-info .pictures .pic-1 {
+  position: absolute;
+  top: 40px;
+  right: 0;
+}
+
+.main-info .quote {
+  text-align: center;
+  width: 60%;
+  margin: 8rem auto;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+.main-info .quote p:first-child {
+  margin-bottom: 2rem;
+}
+
+.main-info .quote b {
+  font-weight: 600;
+}
+
+footer {
+  background: #f3f3f3;
+  text-align: center;
+}
+
+footer .footer-text {
+  padding: 4rem 0;
+}
+
+footer .footer-text h1 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+}
+
+footer .footer-copy {
+  padding: 2rem 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */
